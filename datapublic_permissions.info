@@ -1,7 +1,7 @@
 name = "Datapublic Permissions"
 description = "Provides those roles & permissions for the DataPublic distribution not related to content types provided by other features."
 core = "7.x"
-package = "Features"
+package = "DataPublic"
 version = "7.x-1.0-beta1"
 project = "datapublic_permissions"
 dependencies[] = "admin_menu"
