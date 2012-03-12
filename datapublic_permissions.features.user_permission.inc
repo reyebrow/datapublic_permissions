@@ -45,18 +45,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'webform',
   );
 
-  // Exported permission: access backup and migrate
-  $permissions['access backup and migrate'] = array(
-    'name' => 'access backup and migrate',
-    'roles' => array(),
-  );
-
-  // Exported permission: access backup files
-  $permissions['access backup files'] = array(
-    'name' => 'access backup files',
-    'roles' => array(),
-  );
-
   // Exported permission: access comments
   $permissions['access comments'] = array(
     'name' => 'access comments',
@@ -171,12 +159,6 @@ function datapublic_permissions_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'system',
-  );
-
-  // Exported permission: administer backup and migrate
-  $permissions['administer backup and migrate'] = array(
-    'name' => 'administer backup and migrate',
-    'roles' => array(),
   );
 
   // Exported permission: administer blocks
@@ -309,12 +291,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'locale',
   );
 
-  // Exported permission: administer mailchimp
-  $permissions['administer mailchimp'] = array(
-    'name' => 'administer mailchimp',
-    'roles' => array(),
-  );
-
   // Exported permission: administer menu
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -427,12 +403,6 @@ function datapublic_permissions_user_default_permissions() {
       1 => 'editor',
     ),
     'module' => 'statistics',
-  );
-
-  // Exported permission: administer styles ui
-  $permissions['administer styles ui'] = array(
-    'name' => 'administer styles ui',
-    'roles' => array(),
   );
 
   // Exported permission: administer taxonomy
@@ -581,12 +551,6 @@ function datapublic_permissions_user_default_permissions() {
       1 => 'editor',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: delete backup files
-  $permissions['delete backup files'] = array(
-    'name' => 'delete backup files',
-    'roles' => array(),
   );
 
   // Exported permission: delete own webform content
@@ -809,12 +773,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'googleanalytics',
   );
 
-  // Exported permission: perform backup
-  $permissions['perform backup'] = array(
-    'name' => 'perform backup',
-    'roles' => array(),
-  );
-
   // Exported permission: post comments
   $permissions['post comments'] = array(
     'name' => 'post comments',
@@ -823,12 +781,6 @@ function datapublic_permissions_user_default_permissions() {
       1 => 'authenticated user',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: restore from backup
-  $permissions['restore from backup'] = array(
-    'name' => 'restore from backup',
-    'roles' => array(),
   );
 
   // Exported permission: revert revisions
