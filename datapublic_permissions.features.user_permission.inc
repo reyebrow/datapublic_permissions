@@ -735,7 +735,7 @@ function datapublic_permissions_user_default_permissions() {
   );
 
   // Exported permission: use text format filtered_html
-  $permissions['use text format filtered_html'] = array(
+  /*$permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
     'roles' => array(
       0 => 'administrator',
@@ -743,7 +743,7 @@ function datapublic_permissions_user_default_permissions() {
       2 => 'authenticated user',
     ),
     'module' => 'filter',
-  );
+  );*/
 
   // Exported permission: use text format full_html
   $permissions['use text format full_html'] = array(
