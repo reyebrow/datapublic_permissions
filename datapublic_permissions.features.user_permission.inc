@@ -10,12 +10,6 @@
 function datapublic_permissions_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access administration menu
-  $permissions['access administration menu'] = array(
-    'name' => 'access administration menu',
-    'roles' => array(),
-  );
-
   // Exported permission: access administration pages
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
@@ -174,7 +168,11 @@ function datapublic_permissions_user_default_permissions() {
   // Exported permission: administer boxes
   $permissions['administer boxes'] = array(
     'name' => 'administer boxes',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'editor',
+    ),
+    'module' => 'boxes',
   );
 
   // Exported permission: administer comments
@@ -208,7 +206,10 @@ function datapublic_permissions_user_default_permissions() {
   // Exported permission: administer custom breadcrumbs
   $permissions['administer custom breadcrumbs'] = array(
     'name' => 'administer custom breadcrumbs',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'custom_breadcrumbs',
   );
 
   // Exported permission: administer features
@@ -245,12 +246,6 @@ function datapublic_permissions_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'filter',
-  );
-
-  // Exported permission: administer follow
-  $permissions['administer follow'] = array(
-    'name' => 'administer follow',
-    'roles' => array(),
   );
 
   // Exported permission: administer google analytics
@@ -358,16 +353,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer recaptcha
-  $permissions['administer recaptcha'] = array(
-    'name' => 'administer recaptcha',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-    ),
-    'module' => 'recaptcha',
-  );
-
   // Exported permission: administer search
   $permissions['administer search'] = array(
     'name' => 'administer search',
@@ -444,12 +429,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer uuid
-  $permissions['administer uuid'] = array(
-    'name' => 'administer uuid',
-    'roles' => array(),
-  );
-
   // Exported permission: administer views
   $permissions['administer views'] = array(
     'name' => 'administer views',
@@ -457,15 +436,6 @@ function datapublic_permissions_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'views',
-  );
-
-  // Exported permission: administer xmlsitemap
-  $permissions['administer xmlsitemap'] = array(
-    'name' => 'administer xmlsitemap',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'xmlsitemap',
   );
 
   // Exported permission: block IP addresses
@@ -523,16 +493,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: create webform content
-  $permissions['create webform content'] = array(
-    'name' => 'create webform content',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: delete all webform submissions
   $permissions['delete all webform submissions'] = array(
     'name' => 'delete all webform submissions',
@@ -541,26 +501,6 @@ function datapublic_permissions_user_default_permissions() {
       1 => 'editor',
     ),
     'module' => 'webform',
-  );
-
-  // Exported permission: delete any webform content
-  $permissions['delete any webform content'] = array(
-    'name' => 'delete any webform content',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: delete own webform content
-  $permissions['delete own webform content'] = array(
-    'name' => 'delete own webform content',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: delete own webform submissions
@@ -583,42 +523,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete terms in 10
-  $permissions['delete terms in 10'] = array(
-    'name' => 'delete terms in 10',
-    'roles' => array(),
-  );
-
-  // Exported permission: delete terms in 6
-  $permissions['delete terms in 6'] = array(
-    'name' => 'delete terms in 6',
-    'roles' => array(),
-  );
-
-  // Exported permission: delete terms in 7
-  $permissions['delete terms in 7'] = array(
-    'name' => 'delete terms in 7',
-    'roles' => array(),
-  );
-
-  // Exported permission: delete terms in 8
-  $permissions['delete terms in 8'] = array(
-    'name' => 'delete terms in 8',
-    'roles' => array(),
-  );
-
-  // Exported permission: delete terms in 9
-  $permissions['delete terms in 9'] = array(
-    'name' => 'delete terms in 9',
-    'roles' => array(),
-  );
-
-  // Exported permission: display drupal links
-  $permissions['display drupal links'] = array(
-    'name' => 'display drupal links',
-    'roles' => array(),
-  );
-
   // Exported permission: edit all webform submissions
   $permissions['edit all webform submissions'] = array(
     'name' => 'edit all webform submissions',
@@ -628,26 +532,14 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'webform',
   );
 
-  // Exported permission: edit any user follow links
-  $permissions['edit any user follow links'] = array(
-    'name' => 'edit any user follow links',
-    'roles' => array(),
-  );
-
-  // Exported permission: edit any webform content
-  $permissions['edit any webform content'] = array(
-    'name' => 'edit any webform content',
+  // Exported permission: edit boxes
+  $permissions['edit boxes'] = array(
+    'name' => 'edit boxes',
     'roles' => array(
       0 => 'administrator',
       1 => 'editor',
     ),
-    'module' => 'node',
-  );
-
-  // Exported permission: edit boxes
-  $permissions['edit boxes'] = array(
-    'name' => 'edit boxes',
-    'roles' => array(),
+    'module' => 'boxes',
   );
 
   // Exported permission: edit own comments
@@ -657,22 +549,6 @@ function datapublic_permissions_user_default_permissions() {
       0 => 'authenticated user',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: edit own follow links
-  $permissions['edit own follow links'] = array(
-    'name' => 'edit own follow links',
-    'roles' => array(),
-  );
-
-  // Exported permission: edit own webform content
-  $permissions['edit own webform content'] = array(
-    'name' => 'edit own webform content',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: edit own webform submissions
@@ -693,42 +569,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'follow',
   );
 
-  // Exported permission: edit terms in 10
-  $permissions['edit terms in 10'] = array(
-    'name' => 'edit terms in 10',
-    'roles' => array(),
-  );
-
-  // Exported permission: edit terms in 6
-  $permissions['edit terms in 6'] = array(
-    'name' => 'edit terms in 6',
-    'roles' => array(),
-  );
-
-  // Exported permission: edit terms in 7
-  $permissions['edit terms in 7'] = array(
-    'name' => 'edit terms in 7',
-    'roles' => array(),
-  );
-
-  // Exported permission: edit terms in 8
-  $permissions['edit terms in 8'] = array(
-    'name' => 'edit terms in 8',
-    'roles' => array(),
-  );
-
-  // Exported permission: edit terms in 9
-  $permissions['edit terms in 9'] = array(
-    'name' => 'edit terms in 9',
-    'roles' => array(),
-  );
-
-  // Exported permission: flush caches
-  $permissions['flush caches'] = array(
-    'name' => 'flush caches',
-    'roles' => array(),
-  );
-
   // Exported permission: import own tweets
   $permissions['import own tweets'] = array(
     'name' => 'import own tweets',
@@ -736,12 +576,6 @@ function datapublic_permissions_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'twitter',
-  );
-
-  // Exported permission: make twitter accounts global
-  $permissions['make twitter accounts global'] = array(
-    'name' => 'make twitter accounts global',
-    'roles' => array(),
   );
 
   // Exported permission: manage features
@@ -834,12 +668,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'comment',
   );
 
-  // Exported permission: submit translations to localization server
-  $permissions['submit translations to localization server'] = array(
-    'name' => 'submit translations to localization server',
-    'roles' => array(),
-  );
-
   // Exported permission: translate content
   $permissions['translate content'] = array(
     'name' => 'translate content',
@@ -860,10 +688,14 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'locale',
   );
 
-  // Exported permission: use PHP for settings
-  $permissions['use PHP for settings'] = array(
-    'name' => 'use PHP for settings',
-    'roles' => array(),
+  // Exported permission: update any fullcalendar event
+  $permissions['update any fullcalendar event'] = array(
+    'name' => 'update any fullcalendar event',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'editor',
+    ),
+    'module' => 'fullcalendar',
   );
 
   // Exported permission: use PHP for tracking visibility
@@ -902,12 +734,6 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'l10n_client',
   );
 
-  // Exported permission: use php in custom breadcrumbs
-  $permissions['use php in custom breadcrumbs'] = array(
-    'name' => 'use php in custom breadcrumbs',
-    'roles' => array(),
-  );
-
   // Exported permission: use text format filtered_html
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
@@ -930,28 +756,14 @@ function datapublic_permissions_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: use text format php_code
-  $permissions['use text format php_code'] = array(
-    'name' => 'use text format php_code',
-    'roles' => array(),
-  );
-
-  // Exported permission: view advanced help index
-  $permissions['view advanced help index'] = array(
-    'name' => 'view advanced help index',
-    'roles' => array(),
-  );
-
-  // Exported permission: view advanced help popup
-  $permissions['view advanced help popup'] = array(
-    'name' => 'view advanced help popup',
-    'roles' => array(),
-  );
-
-  // Exported permission: view advanced help topic
-  $permissions['view advanced help topic'] = array(
-    'name' => 'view advanced help topic',
-    'roles' => array(),
+  // Exported permission: view date repeats
+  $permissions['view date repeats'] = array(
+    'name' => 'view date repeats',
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'authenticated user',
+    ),
+    'module' => 'date_repeat_field',
   );
 
   // Exported permission: view own unpublished content
