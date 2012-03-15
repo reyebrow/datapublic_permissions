@@ -760,7 +760,6 @@ function datapublic_permissions_user_default_permissions() {
   $permissions['view date repeats'] = array(
     'name' => 'view date repeats',
     'roles' => array(
-      0 => 'anonymous user',
       1 => 'authenticated user',
     ),
     'module' => 'date_repeat_field',
